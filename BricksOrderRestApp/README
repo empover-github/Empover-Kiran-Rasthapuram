@@ -1,0 +1,44 @@
+# Bricks Order 
+
+## OOD
+
+```
+BricksOrderTDD - TDD Unit Test Cases
+|-- CreateOrderTest() : Verify the Order creation with valid quantity
+|-- CreateOrderWithInvalidQtyTest()    : Verify the Order creation with invalid quantity
+|-- getOrderTest() : Verify Get Order details with valid Order ref number input
+|-- getOrderWithInvalidRefNoTest() : Verify Get Order details with invalid Order ref number input
+|-- updateOrderTest() : Verify Update  Order with valid input
+|-- updateOrderInvalidInputTest()    : Verify Update of Order with  invalid input
+|-- fulFillOrderTest() : Verify Dispatch Order functionality with valid input
+|-- fulFillOrderInvalidInputTest() : Verify Dispatch Order functionality with Invalid input
+|-- updateOrderForDispatchedOrderTest() : Verify update order functionality for dispatched order
+|-- getAllOrdersTest() :
+
+BricksOrder - Model
+|-- orderRefNo
+|-- orderQty
+|-- Status
+|-- createdDate
+
+BricksOrderController : Handles requests for the Order service.
+|-- orderData : Map object used to data storage/retrieval
+|-- createOrder(): Creates Order based on client request
+|-- getOrder(): Get order details by passing order ref no 
+|-- getAllOrders(): Get All created Orders
+|-- updateOrder(): Updates Order qty and also Status by passing order ref no
+
+BricksOrderClient : 
+|-- main() : Main method to run the client application
+|-- createOrder(): Creates Order which takes the new orders
+|-- getOrder():  Get order details by passing order ref no 
+|-- getAllOrders(): Get All created Orders
+|-- updateOrder(): Updates Order qty and also Status by passing order ref no
+|-- fulFilOrder : Fulfils the order by status dispatched by passing order ref no
+
+TDD Unit Test Cases
+File attaches with name of BricksOrder_TDD_TC
+
+
+
+
